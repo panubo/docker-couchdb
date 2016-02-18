@@ -1,13 +1,13 @@
 # Panubo CouchDB
 
-FROM fedora:22
+FROM fedora:23
 MAINTAINER Andrew Cutler <andrew@panubo.com>
 
 # Update & Install
 RUN \
     echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
     dnf -q -y update && \
-    dnf -y install couchdb && \
+    dnf -y install couchdb python && \
     dnf clean all && rm -rf /var/cache/yum/*
 
 # Configure CouchDB

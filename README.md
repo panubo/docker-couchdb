@@ -1,6 +1,6 @@
 # CouchDB
 
-CouchDB Dockerfile based on Fedora 22.
+CouchDB Dockerfile based on Fedora 23.
 
 ## Use
 
