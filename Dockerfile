@@ -9,7 +9,7 @@ ENV VOLTGRID_PIE=1.0.6 VOLTGRID_PIE_SHA1=11572a8ea15fb31cddeaa7e1438db6142055658
 RUN \
     echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
     dnf -q -y update && \
-    dnf -y install couchdb python tar && \
+    dnf -y install couchdb python tar procps-ng && \
     dnf clean all && rm -rf /var/cache/yum/*
 
 # Configure CouchDB
