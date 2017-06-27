@@ -1,6 +1,6 @@
 # Panubo CouchDB 1.6.1
 
-FROM fedora:22
+FROM fedora:23
 MAINTAINER Andrew Cutler <andrew@panubo.com>
 
 ENV VOLTGRID_PIE=1.0.6 VOLTGRID_PIE_SHA1=11572a8ea15fb31cddeaa7e1438db61420556587
@@ -9,7 +9,7 @@ ENV VOLTGRID_PIE=1.0.6 VOLTGRID_PIE_SHA1=11572a8ea15fb31cddeaa7e1438db6142055658
 RUN \
     echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
     dnf -q -y update && \
-    dnf -y install couchdb tar && \
+    dnf -y install couchdb python tar && \
     dnf clean all && rm -rf /var/cache/yum/*
 
 # Configure CouchDB
