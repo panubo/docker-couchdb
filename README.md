@@ -1,4 +1,4 @@
-# CouchDB
+# CouchDB Docker Container
 
 CouchDB Dockerfile based on Fedora 22.
 
@@ -9,3 +9,7 @@ If `COUCHDB_USER` and `COUCHDB_PASS` is specified then an admin user will be cre
 and when the container is started (if no admins are present).
 
     docker run --publish=5984:5984 -e COUCHDB_DATABASE=baz -i -t panubo/couchdb
+
+## Status
+
+Production stable. However for new deployments we recommend using the official container.
