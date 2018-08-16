@@ -1,6 +1,6 @@
-# CouchDB Docker Container
+# CouchDB Docker image
 
-CouchDB Dockerfile based on Fedora 23.
+CouchDB Docker image based on Fedora 23.
 
 ## Use
 
