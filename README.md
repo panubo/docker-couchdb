@@ -1,3 +1,9 @@
+# Notice
+
+This repository is no longer maintained and has been archived.
+
+---
+
 # CouchDB Docker image
 
 CouchDB Docker image based on Fedora 23.
